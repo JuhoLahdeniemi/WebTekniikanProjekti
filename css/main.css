@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    background-color: #ADE8F4;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+#sideBar img {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#content img {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#statistics {
+    margin: 0 30px;
+}
+
+.contentChannel {
+    float: left;
+}
+
+#channelPage {
+    min-width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+input, button {
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0.2em 1.45em;
+    border: 0.15em solid #CCCCCC;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 400;
+    color: #000000;
+    background-color: #CAF0F8;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:hover {
+    border-color: #7a7a7a;
+}
+
+button {
+    text-align: center;
+}
+
+button:hover {
+    border-color: #7a7a7a;
+}
+
+#sideBar button {
+    width: 100%;
+    margin: 0.1em;
+}
+
+#channelPage h1:hover {
+    color: black;
+    text-decoration-color: black;
+}
+
+#channelPage img {
+    align-content: center;
+}
+
+#channelPage a {
+    align-content: center;
+    text-align: center;
+}
+
+#sideBar {
+    border-right: 1px solid darkgrey;
+    width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+    margin: 0;
+    height: 100%;
+}
+
+main {
+    padding: 0 0;
+    margin: 1em 1em 1em 170px;
+}
+
+#searchBar {
+    display: flex;
+    margin-left: 160px;
+    max-width: 100%;
+    border-bottom: 1px solid darkgrey;
+}
+
+div#channels {
+    margin: 5px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#videoDivAll {
+    justify-content: center;
+}
+
+#channelPage {
+    justify-content: space-evenly;
+}
+
+#channelHeaderDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+
+    #sideBar {
+        flex-direction: column;
+    }
+    #searchField {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    #channelMain {
+        justify-content: center;
+    }
+    #channelHeaderDiv {
+        justify-content: center;
+        flex-direction: column;
+    }
+    #channelHeaderDiv img {
+        margin: auto;
+    }
+    div#map {
+        margin: auto;
+    }
+    div#channelTitleDiv {
+        margin: auto;
+    }
+    #sideBar {
+        flex-direction: column;
+    }
+    #searchBar {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    main {
+        max-width: 100%;
+    }
+
+    table {
+        border-left: 1px solid darkgrey;
+        margin: 0;
+    }
+
+    .tableContent {
+        max-height: 420px;
+        overflow-y: scroll;
+        max-width: 750px;
+        margin: 20px;
+    }
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #searchBar {
+        margin: auto;
+        flex-direction: column;
+        border: 0;
+    }
+
+    #sideBar {
+        margin: auto;
+        display: flex;
+        position: static;
+        justify-content: space-evenly;
+        border-right: 0;
+    }
+
+    .sideBarButton {
+        padding: 2em;
+    }
+
+    main {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    #channelMain {
+        margin: auto;
+    }
+    #channelAside {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+#sideBar img {
+    width: 100%;
+    box-shadow: none;
+}
+
+.videoDiv h2 {
+    text-align: center;
+}
+
+
+.channel {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px 0 0 0;
+    border: 1px solid black;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.channelContainer {
+    padding-inline: 2px 4px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.channel h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#channelHeaderDiv h1 {
+    text-align: center;
+}
+
+#statistics h2, #statistics p{
+    text-align: center;
+}
+
+#videoDivAll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.channelContainer img {
+    border-radius: 50%;
+}
+
+.thumbnail {
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    cursor:pointer;
+}
+
+#map {
+    border-radius: 50%;
+    height: 240px;
+    width: 240px;
+    pointer-events: none;
+}
+
+
+table {
+    overflow-y: auto;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 0.9em;
+    min-width: 100%;
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+    background-color: #0096C7;
+    color: #ffffff;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid darkgrey;
+    border-left: 1px solid darkgray;
+}
+
+#searchField {
+    text-align: center;
+}
+
+.loader {
+    margin: auto;
+    border: 16px solid #CCCCCC;
+    border-top: 16px solid #0096C7;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#logo {
+    cursor: pointer;
+}
+
+table th#ranking:hover,
+th#channelName:hover,
+th#subscribers:hover,
+th#videos:hover,
+th#views:hover {
+    background-color: #023E8A;
+    cursor: default;
+}

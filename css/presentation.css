@@ -1,0 +1,22 @@
+body {
+    background-color: #ADE8F4;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1, h2 {
+    text-decoration: underline;
+}
+li {
+    margin-left: -2em;
+    list-style-type: none;
+}
+
+video {
+    max-width: 80%;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
